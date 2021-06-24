@@ -14,7 +14,7 @@ import (
 	"path"
 	"strings"
 
-	fileutil "github.com/yiznix/utils/file"
+	fileutil "yiznix/utils/file"
 )
 
 func init() {

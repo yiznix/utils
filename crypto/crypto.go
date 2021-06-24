@@ -23,6 +23,19 @@ import (
 	"golang.org/x/crypto/bcrypt"
 )
 
+/*func foo() {
+	a := ""
+	var b []byte
+	_, err := base64.StdEncoding.Decode([]byte(a), b)
+    if err != nil {
+        log.Fatal(err)
+    }
+
+	var out bytes.Buffer
+    p := pem.EncodeToMemory(pem.Block{Type: "CERTIFICATE", Bytes: b})
+
+}*/
+
 // HashPassword hmac password and encodes it as base64.
 func HashPassword(pwd, pepper string) ([]byte, error) {
 	mac := hmac.New(sha256.New, []byte(pepper))
